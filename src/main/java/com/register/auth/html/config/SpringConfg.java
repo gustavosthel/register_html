@@ -57,5 +57,8 @@ public class SpringConfg {
         return new NimbusJwtEncoder(jwks);
     }
 
-
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 }
